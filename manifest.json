@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GimmeHours",
+  "version": "0.2.0",
+  "description": "Dokładna godzina publikacji filmu w opisie YouTube.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}
